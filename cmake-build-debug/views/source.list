@@ -1,0 +1,16 @@
+HEADERS += blog_createView.moc
+SOURCES += blog_createView.cpp
+HEADERS += blog_indexView.moc
+SOURCES += blog_indexView.cpp
+HEADERS += blog_saveView.moc
+SOURCES += blog_saveView.cpp
+HEADERS += blog_showView.moc
+SOURCES += blog_showView.cpp
+
+# include view files in the project
+views.files += /home/jwc/CLionProjects/tf2blog/views/blog/create.erb
+views.files += /home/jwc/CLionProjects/tf2blog/views/blog/index.erb
+views.files += /home/jwc/CLionProjects/tf2blog/views/blog/save.erb
+views.files += /home/jwc/CLionProjects/tf2blog/views/blog/show.erb
+views.path = .dummy
+INSTALLS += views
